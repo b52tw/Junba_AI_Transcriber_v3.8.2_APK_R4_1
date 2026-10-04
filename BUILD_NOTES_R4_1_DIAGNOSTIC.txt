@@ -1,0 +1,10 @@
+R4.1 changes
+============
+- Based on R4 Diagnostic source.
+- File-first cross-process diagnostics.
+- Added persistent last-stage marker for Java/native/class-load failures.
+- Removed FullTranscriberActivity.attachBaseContext/fontScale override.
+- Added a minimal second-process Gate Activity with no Whisper/Gemini references.
+- Heavy FullTranscriberActivity moved to a third isolated process.
+- FullTranscriberActivity writes stage markers around migrateLegacyApiKey, buildUi, and updateModelStatus.
+- GitHub Actions packages/uploads APK immediately after a clean successful build.
